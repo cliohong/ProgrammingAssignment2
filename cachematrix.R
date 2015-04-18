@@ -22,8 +22,8 @@ makeCacheMatrix<-function(x=matrix()){
      return(inverse)    ##inverse returns
    }
    data<-x$get()    ##getting matrix 
-   inverse<-solve(data, ...)  ## use solve() to compute inverse
-   x$set_inverse(inverse) ## cache the inverse
-   inverse  ##  return inverse
+   inverse<-solve(data, ...)  ## using solve() to compute inverse
+   x$set_inverse(inverse) ## caching the inverse
+   inverse  ##  returning inverse
    
  }
